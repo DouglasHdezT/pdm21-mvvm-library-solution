@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph.xml"
-    app:startDestination="@id/fragmentFormBook">
+    app:startDestination="@id/fragmentListBook">
 
     <fragment
         android:id="@+id/fragmentFormBook"
@@ -18,5 +18,9 @@
         android:id="@+id/fragmentListBook"
         android:name="com.deushdezt.library.ui.FragmentListBook"
         tools:layout="@layout/fragment_list_book"
-        android:label="FragmentListBook" />
+        android:label="FragmentListBook" >
+        <action
+            android:id="@+id/show_form"
+            app:destination="@id/fragmentFormBook" />
+    </fragment>
 </navigation>

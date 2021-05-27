@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
+import com.deushdezt.library.R
 import com.deushdezt.library.databinding.FragmentListBookBinding
 import com.deushdezt.library.ui.library_vm.LibraryViewModel
 
@@ -39,6 +41,10 @@ class FragmentListBook: Fragment() {
             }
 
             binding.bookListText.text = text
+        }
+
+        binding.addBookAction.setOnClickListener {
+            findNavController().navigate(R.id.show_form)
         }
     }
 }
