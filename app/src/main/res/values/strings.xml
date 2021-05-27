@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Library</string>
+    <string name="book_name_hint">Book name</string>
+    <string name="new_book_title">Insert new book</string>
+    <string name="book_isbn_hint">Book ISBN</string>
+    <string name="book_author_hint">Book author</string>
+    <string name="book_editorial_hint">Book Editorial</string>
+    <string name="book_year_hint">Book year</string>
+    <string name="add_book_action_text">Add book</string>
+</resources>
